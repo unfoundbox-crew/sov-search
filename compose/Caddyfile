@@ -1,0 +1,10 @@
+:8888 {
+	reverse_proxy searxng:8080 {
+		lb_policy round_robin
+
+		header_up Host {host}
+		header_up X-Real-IP {remote}
+		header_up X-Forwarded-For {remote}
+		header_up X-Forwarded-Proto {scheme}
+	}
+}

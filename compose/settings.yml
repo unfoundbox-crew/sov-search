@@ -1,0 +1,42 @@
+use_default_settings: true
+
+general:
+  instance_name: "SOV"
+  debug: false
+  privacypolicy_url: false
+  donation_url: false
+  contact_url: false
+
+server:
+  secret_key: "@SEARXNG_SECRET@"  # replaced via ${SEARXNG_SECRET} env at deploy
+  limiter: true
+  image_proxy: true
+  method: "POST"
+  public_instance: false
+
+search:
+  safe_search: 2
+  autocomplete: "duckduckgo"
+  default_lang: "en"
+
+valkey:
+  url: redis://valkey:6379/0
+
+outgoing:
+  request_timeout: 3.0
+  max_request_timeout: 10.0
+  pool_connections: 100
+  pool_maxsize: 10
+  keepalive_expiry: 5.0
+  enable_http2: true
+  retries: 1
+  max_redirects: 30
+
+result_proxy:
+  url: http://localhost:3000/morty
+  key: "@MORTY_KEY@"  # placeholder — set real key at deploy, never commit
+
+engines:
+  remove:
+    - google
+    - bing

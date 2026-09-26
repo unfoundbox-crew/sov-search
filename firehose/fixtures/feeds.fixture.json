@@ -1,0 +1,12 @@
+[
+  {"url": "https://t0-a.example.com/feed.xml", "domain": "t0-a.example.com", "tier": 0, "etag": "\"a1\"", "last_modified": "Thu, 10 Sep 2026 12:00:00 GMT"},
+  {"url": "https://t0-b.example.com/rss", "domain": "t0-b.example.com", "tier": 0, "etag": null, "last_modified": null},
+  {"url": "https://t0-c.example.com/feed", "domain": "t0-c.example.com", "tier": 0, "etag": "\"c3\"", "last_modified": "Thu, 10 Sep 2026 13:00:00 GMT"},
+  {"url": "https://t1-a.example.com/feed.xml", "domain": "t1-a.example.com", "tier": 1, "etag": "\"d4\"", "last_modified": null},
+  {"url": "https://t1-b.example.com/rss", "domain": "t1-b.example.com", "tier": 1, "etag": null, "last_modified": "Wed, 09 Sep 2026 10:00:00 GMT"},
+  {"url": "https://t1-c.example.com/feed", "domain": "t1-c.example.com", "tier": 1, "etag": null, "last_modified": null},
+  {"url": "https://t1-d.example.com/atom", "domain": "t1-d.example.com", "tier": 1, "etag": "\"e5\"", "last_modified": "Wed, 09 Sep 2026 11:00:00 GMT"},
+  {"url": "https://t2-a.example.com/feed.xml", "domain": "t2-a.example.com", "tier": 2, "etag": null, "last_modified": null},
+  {"url": "https://t2-b.example.com/rss", "domain": "t2-b.example.com", "tier": 2, "etag": "\"f6\"", "last_modified": "Tue, 08 Sep 2026 09:00:00 GMT"},
+  {"url": "https://t2-c.example.com/feed", "domain": "t2-c.example.com", "tier": 2, "etag": null, "last_modified": null}
+]
